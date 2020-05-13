@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class HelloWorldService {
-    public String get(String text) {
-        return "hello world - " + text;
+    public String get(HelloWorldController.Test test) {
+        return "hello world - " + test.getText();
     }
 }
